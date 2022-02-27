@@ -1,0 +1,91 @@
+@font-face {
+    font-family: normal;
+    src: url(acumin-medium.woff2.ttf);
+    font-size: 500;
+}
+
+@font-face {
+    font-family: large;
+    src: url(acumin-medium.woff2.ttf);
+    font-weight: 800;
+    size-adjust: 450%;
+}
+
+.band {
+    font-family: large;
+    background-image: url(../img/header-band.svg);
+    background-position: bottom center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+.band>div {
+    transform: translateY(50%);
+    padding: 0 13vw;
+}
+
+html {
+    font-family: normal;
+}
+
+img {
+    position: relative;
+}
+
+.logo {
+    min-width: 20vw;
+    min-height: 41px;
+    top: 2rem;
+    left: 2rem;
+}
+
+section {
+    flex-direction: column;
+    display: flex;
+    padding: 0 0;
+}
+
+section>div>div {
+    padding: 0 2rem;
+}
+
+#home {
+    /**/
+}
+
+#home>div {
+    background-position: top center;
+    background-size: cover;
+    background-clip: padding-box;
+}
+
+#home>.section_header {
+    min-height: 60vh;
+    background-image: url(../img/bg-home.png);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#home>.section_header span {
+    color: white;
+    position: relative;
+}
+
+#home>.section_header>div {
+    flex: 1;
+}
+
+#home>.section_content {
+    background-image: url(../img/bg-sobre.png);
+}
+
+@media (min-width:390px) {
+    #home>.section_header {
+        background-image: url(../img/bg-home-m.png);
+    }
+    #home>.section_content {
+        background-image: url(../img/bg-sobre-m.png);
+    }
+}

@@ -1,29 +1,58 @@
 @font-face {
     font-family: normal;
-    src: url(acumin-medium.woff2.ttf);
-    font-size: 500;
+    src: url(AcuminVariableConcept.otf);
+    size-adjust: 100%;
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: normal-3x;
+    src: url(AcuminVariableConcept.otf);
+    size-adjust: 300%;
+    font-weight: 500;
 }
 
 @font-face {
     font-family: large;
-    src: url(acumin-medium.woff2.ttf);
-    font-weight: 800;
-    size-adjust: 450%;
+    src: url(AcuminVariableConcept.otf);
+    font-weight: 500;
+    size-adjust: 460%;
+}
+
+b {
+    font-family: large;
+    font-weight: 800 !important;
 }
 
 .band {
     font-family: large;
-    background-image: url(../img/header-band.svg);
-    background-position: bottom center;
-    background-size: cover;
     display: flex;
-    flex-direction: column;
+    text-align: center;
+    position: relative;
 }
 
-.band>div {
-    transform: translateY(50%);
-    padding: 0 13vw;
+.band::before {
+    content: " ";
+    display: block;
+    background-image: url(../img/header-band.svg);
+    background-position: top center;
+    background-size: cover;
+    opacity: 0.8;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
 }
+
+.band a>button {
+    color: white;
+    font-family: normal-3x;
+    background: #0066FF;
+    border-radius: 40px;
+}
+
+.band>div {}
 
 html {
     font-family: normal;
@@ -46,7 +75,7 @@ section {
     padding: 0 0;
 }
 
-section>div>div {
+section>div.section_content>div {
     padding: 0 2rem;
 }
 
@@ -65,7 +94,6 @@ section>div>div {
     background-image: url(../img/bg-home.png);
     display: flex;
     flex-direction: column;
-    text-align: center;
 }
 
 #home>.section_header span {

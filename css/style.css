@@ -1,33 +1,30 @@
 @font-face {
     font-family: normal;
     src: url(AcuminVariableConcept.otf);
-    size-adjust: 100%;
+    font-size: 10px;
     font-weight: normal;
 }
-u{
-    text-decoration: none;
-}
+
 h1, h2{
     color: #0066FF;
     font-weight: lighter;
-    font-size: 3rem;
     margin: 0;
-    margin-bottom:.5rem;
+    overflow-x: visible;
+    white-space: nowrap;
 }
 .bolder{
     font-weight: 900;
-    font-size: 3rem;
+    font-size: 2rem;
     margin-bottom: 1rem;
 }
 .section_header b {
     font-family: normal;
     font-weight: 800 !important;
-    font-size: 3.5rem;
 }
 
 .band {
     font-family: normal;
-    font-size: 3.5rem;
+    font-size: 1.3rem;
     display: flex;
     text-align: center;
     position: relative;
@@ -36,35 +33,16 @@ h1, h2{
     align-items: center;
 }
 
-.band::before {
-    content: " ";
-    display: block;
-    background-image: url(../img/header-band.svg);
-    background-position: top center;
-    background-size: cover;
-    opacity: 0.8;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    position: absolute;
-}
-
 .band a>button {
     color: white;
     font-family: normal;
-    font-size: 2rem;
     background: #0066FF;
-    border-radius: 20px;
-    padding: 1rem;
-    margin-top: 1.5rem;
+    border-radius: 10px;
+    padding: .5rem;
+    margin-top: .2rem;
     border: none;
 }
 
-.band>div {
-    position: relative;
-    width: 50%;
-}
 
 html {
     font-family: normal;
@@ -76,8 +54,8 @@ img {
 
 .logo {
     width: 30%;
-    top: 5rem;
-    left: 5rem;
+    top: 2.5rem;
+    left: 2.5rem;
 }
 
 section {
@@ -87,7 +65,7 @@ section {
 }
 
 section>div.section_content>div {
-    padding: 0 2rem;
+    padding: 0 1rem;
 }
 
 #home {
@@ -120,21 +98,38 @@ section>div.section_content>div {
     background-image: url(../img/bg-sobre.png);
     color:#013176;
     line-height: 1.3;
-    font-size: 1.5rem;
 }
 
-@media (min-width:390px) {
+@media screen and (max-width: 414px) {
+    
+.band>div {
+    position: relative;
+    width: 45%;
+}
+    .band::before {
+        content: " ";
+        display: block;
+        background-image: url(../img/header-band.svg);
+        background-position: top center;
+        background-size: cover;
+        opacity: 0.8;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+    }
     #home>.section_header {
         background-image: url(../img/bg-home-m.png);
     }
     #home>.section_content {
         background-image: url(../img/bg-sobre-m.png);
         background-position: bottom right;
-        background-size: 50%;
+        background-size: 55%;
         background-repeat: no-repeat;
     }
     #home>.section_content::before {
-        width: 90%;
+        width: 80%;
         height: 100%;
         right: 0;
         background: linear-gradient(to bottom right, #fff 0%, #fff 50%, #E5E5E5 50%, #E5E5E5 100%);
@@ -146,11 +141,9 @@ section>div.section_content>div {
     }
 
     #home>.section_content>div{
-        max-width: 50%;
+        max-width: 60%;
         position: relative;
-        margin-top: 4rem;
+        margin-top: 2rem;
+        font-size: calc(.7rem);
     }
-   
-    
-
 }

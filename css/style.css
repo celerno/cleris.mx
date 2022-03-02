@@ -5,30 +5,22 @@
     font-weight: 500;
 }
 
-@font-face {
-    font-family: normal-3x;
-    src: url(AcuminVariableConcept.otf);
-    size-adjust: 300%;
-    font-weight: 500;
-}
-
-@font-face {
-    font-family: large;
-    src: url(AcuminVariableConcept.otf);
-    font-weight: 500;
-    size-adjust: 460%;
-}
 
 b {
-    font-family: large;
+    font-family: normal;
     font-weight: 800 !important;
+    font-size: 3.5rem;
 }
 
 .band {
-    font-family: large;
+    font-family: normal;
+    font-size: 3.5rem;
     display: flex;
     text-align: center;
     position: relative;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .band::before {
@@ -47,12 +39,19 @@ b {
 
 .band a>button {
     color: white;
-    font-family: normal-3x;
+    font-family: normal;
+    font-size: 2rem;
     background: #0066FF;
-    border-radius: 40px;
+    border-radius: 20px;
+    padding: 1rem;
+    margin-top: 1.5rem;
+    border: none;
 }
 
-.band>div {}
+.band>div {
+    position: relative;
+    width: 50%;
+}
 
 html {
     font-family: normal;
@@ -63,10 +62,9 @@ img {
 }
 
 .logo {
-    min-width: 20vw;
-    min-height: 41px;
-    top: 2rem;
-    left: 2rem;
+    width: 30%;
+    top: 5rem;
+    left: 5rem;
 }
 
 section {
@@ -90,7 +88,6 @@ section>div.section_content>div {
 }
 
 #home>.section_header {
-    min-height: 60vh;
     background-image: url(../img/bg-home.png);
     display: flex;
     flex-direction: column;
@@ -102,7 +99,7 @@ section>div.section_content>div {
 }
 
 #home>.section_header>div {
-    flex: 1;
+    min-height: 28vh;
 }
 
 #home>.section_content {

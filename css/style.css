@@ -99,7 +99,7 @@ section {
 }
 
 section>div.section_content>div {
-    padding: 0 1rem;
+    padding: 2rem;
 }
 
 #home {
@@ -118,7 +118,7 @@ section>div.section_content>div {
     flex-direction: row-reverse;
     justify-content: flex-end;
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: top center;
     background-size: cover;
     height: 580px;
 }
@@ -133,6 +133,10 @@ section>div.section_content>div {
     flex: 1;
 }
 
+#home>.section_content>div {
+    flex: 1;
+}
+
 .band>div {
     position: relative;
     padding: 0 5rem;
@@ -143,9 +147,11 @@ section>div.section_content>div {
     background-image: url(../img/bg-sobre.png);
     color: #013176;
     line-height: 1.3;
+    display: flex;
+    flex-direction: row;
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 680px) {
     .band {
         text-align: center;
         justify-content: center;
@@ -184,7 +190,6 @@ section>div.section_content>div {
     #home>.section_content>div {
         max-width: 60%;
         position: relative;
-        margin-top: 2rem;
         font-size: calc(.7rem);
     }
     .logo {

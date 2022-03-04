@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1" name="viewport" />
     <link href="css/style.css" rel="stylesheet" />
+
 </head>
 
 <body>
@@ -57,58 +58,118 @@
                     <li>Soy parte del grupo Elite Atlantis.</li>
                 </ul>
                 <p>
-                    Actualmente soy Promotora de CLERIS Asesores, <b>empresa calificada como una de las mejores agencias a
-                    nivel nacional:</b></p>
-                <ul>
-                    <li>Reconocida por SEGUROS MONTERREY NEW YORK LIFE como Agencia Grand Diamante.</li>
-                    <li>Galardonada con el premio George Holden, máximo reconocimiento en el gremio asegurador por ASPRO GAMA INTERNACIONAL.</li>
-                    <li>Ganadora del 1er lugar en todos los indicadores de SMNYL, colocándola dentro de los primeros 5 lugares a nivel nacional. </li>
-                </ul>
-                <b>¿Qué esperas? Toma el control y decídete a tener
-                            un mejor futuro.</b>
+                    <b>Actualmente soy Promotora de CLERIS Asesores</b>, empresa respaldada por SEGUROS MONTERREY que cuenta con más de 80 años de experiencia; y por los más de 180 años de New York Life, <b>lo que nos da todas las herramientas necesarias para capacitarte y guiarte por el camino del éxito.</b>
+
+                    <br>
+
+                    <br>
+                    <b>                   ¿Qué esperas? Toma el control y decídete a tener un mejor futuro</b>
                 </p>
             </div>
         </div>
     </section>
+    <style>
+        #asesoria {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+        }
+        
+        #asesoria>.section_header {
+            margin-top: 4rem;
+            font-size: 2rem;
+            color: var(--text);
+        }
+        
+        .lista {
+            display: flex;
+            flex-direction: row;
+            max-width: 80%;
+        }
+        
+        .grupo {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 120px;
+            margin: 0 20px;
+        }
+        
+        .imagen img {
+            max-height: 100px;
+            width: auto;
+        }
+        
+        .lista .titulo {
+            margin-top: 10px;
+            font-weight: bolder;
+            text-transform: uppercase;
+        }
+        
+        .lista .descripcion {
+            margin-top: 10px;
+            font-size: .7rem;
+        }
+        
+        @media screen and (max-width: 680px) {
+            #asesoria>.section_header {}
+            .lista {
+                flex-direction: column;
+            }
+            .grupo {
+                flex-direction: row;
+                max-width: unset;
+            }
+            .imagen {
+                margin-right: .7rem;
+            }
+            .imagen>img {
+                max-width: 60px;
+            }
+        }
+    </style>
     <section id="asesoria">
-        <div class="section_header">Al convertirte en asesor de CLERIS obtienes:</div>
+        <div class="section_header">Al convertirte en <b>asesor de CLERIS</b> obtienes:</div>
         <div class="section_content">
             <div class="lista">
                 <div class="grupo">
-                    <div class="imagen"></div>
+                    <div class="imagen"><img src="img/asesorias-1.png"></div>
                     <div class="texto">
                         <div class="titulo">ingresos sin límite</div>
-                        <div class="descriptcion">Toma el control de tus finanzas ganando comisiones y bonos por venta, entre más vendes más ganas.</div>
+                        <div class="descripcion">Toma el control de tus finanzas ganando comisiones y bonos por venta, entre más vendes más ganas.</div>
                     </div>
                 </div>
                 <div class="grupo">
-                    <div class="imagen"></div>
+                    <div class="imagen"><img src="img/asesorias-2.png"></div>
                     <div class="texto">
                         <div class="titulo">reconocimiento</div>
-                        <div class="descriptcion">Al cumplir tus metas puedes ganar grandes bonos, viajes y premios.
+                        <div class="descripcion">Al cumplir tus metas puedes ganar grandes bonos, viajes y premios.
                         </div>
                     </div>
                 </div>
                 <div class="grupo">
-                    <div class="imagen"></div>
+                    <div class="imagen"><img src="img/asesorias-3.png"></div>
                     <div class="texto">
                         <div class="titulo">crecimiento</div>
-                        <div class="descriptcion">Desarrollarte como Asesor de Seguros te ayuda a formar una carrera que te gratificará tanto personal como profesionalmente.</div>
+                        <div class="descripcion">Desarrollarte como Asesor de Seguros te ayuda a formar una carrera que te gratificará tanto personal como profesionalmente.</div>
                     </div>
                 </div>
                 <div class="grupo">
-                    <div class="imagen"></div>
+                    <div class="imagen"><img src="img/asesorias-4.png"></div>
                     <div class="texto">
                         <div class="titulo">capacitacion constante</div>
-                        <div class="descriptcion">Te capacitamos en la parte técnica y en ventas para que desarrolles tu potencial.
+                        <div class="descripcion">Te capacitamos en la parte técnica y en ventas para que desarrolles tu potencial.
                         </div>
                     </div>
                 </div>
                 <div class="grupo">
-                    <div class="imagen"></div>
+                    <div class="imagen"><img src="img/asesorias-5.png"></div>
                     <div class="texto">
                         <div class="titulo">control de tu tiempo</div>
-                        <div class="descriptcion">Al tener flexibilidad de horario, puedes organizar mejor tu tiempo y tus actividades diarias.</div>
+                        <div class="descripcion">Al tener flexibilidad de horario, puedes organizar mejor tu tiempo y tus actividades diarias.</div>
                     </div>
                 </div>
             </div>

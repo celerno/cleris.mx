@@ -299,7 +299,7 @@
             </div>
         </div>
         <div class="section_content">
-            <h1>Características de un asesor <b>CLERIS</b></h1>
+            <span>Características de un asesor <b>CLERIS</b></span>
             <div>
                 <div>
                     <div>1</div>
@@ -311,7 +311,7 @@
                 </div>
                 <div>
                     <div>3</div>
-                    <div>Ganas de éxito.</div>
+                    <div>Ganas de<br>éxito.</div>
                 </div>
                 <div>
                     <div>4</div>
@@ -325,27 +325,55 @@
         </div>
     </section>
     <style>
+        #agendar .section_content {
+            background-color: var(--white);
+            text-align: center;
+            padding-top: 4rem;
+        }
+        
+        #agendar .section_content>span {
+            font-weight: 500;
+            font-size: 1.5rem;
+        }
+        
         #agendar .section_content>div {
             display: flex;
             flex-direction: row;
             align-content: center;
             text-align: center;
-            justify-content: space-around;
+            justify-content: space-evenly;
         }
         
         #agendar .section_content>div>div {
             background-color: var(--text);
             color: var(--white);
+            display: flex;
+            justify-content: space-around;
+            align-content: center;
+            flex-direction: column;
+            align-items: center;
+            width: 180px;
+            height: 252px;
+            /*width*1.4= 252px*/
+            border-radius: 8px;
         }
         
         #agendar .section_content>div>div>div:first-of-type {
+            height: 92px;
+            width: 92px;
             border-radius: 50%;
-            font-size: larger;
-            font-weight: bold;
-            border: 1px solid var(--title);
+            font-size: 60px;
+            font-weight: 500;
+            border: 3px solid var(--title);
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
         
-        #agendar .section_content>div>div:last-of-type {}
+        #agendar .section_content>div>div>div:last-of-type {
+            max-width: 126px;
+            font-size: 1rem;
+        }
     </style>
     <section id="form">
         <div class="section_header">

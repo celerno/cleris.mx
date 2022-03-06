@@ -1,6 +1,9 @@
 :root {
     --text: #013176;
     --title: #0066FF;
+    --bg: #E6E6E6;
+    --white: #FFF;
+    --hard-sell-button: #1FD151;
 }
 
 @font-face {
@@ -25,7 +28,7 @@ section {
     max-width: 1090px;
     width: 100%;
     color: var(--text);
-    background-color: #E6E6E6;
+    background-color: var(--bg);
 }
 
 h1,
@@ -43,7 +46,7 @@ h2 {
     margin-bottom: 1rem;
 }
 
-.section_header b {
+git dif .section_header b {
     font-family: normal;
     font-weight: 800 !important;
 }

@@ -115,7 +115,9 @@
         }
         
         @media screen and (max-width: 680px) {
-            #asesoria>.section_header {}
+            #asesoria>.section_header {
+                background-color: var(--bg);
+            }
             .lista {
                 flex-direction: column;
             }
@@ -175,17 +177,134 @@
             </div>
         </div>
     </section>
+    <style>
+        #agendar .section_header {
+            color: var(--white);
+            font-size: 1.25rem;
+            display: flex;
+            flex-direction: column;
+            letter-spacing: 1px;
+        }
+        
+        #agendar .section_header>div:first-of-type {
+            background-image: url(img/agendar-header.png);
+            background-position: center top;
+            background-size: cover;
+            background-repeat: no-repeat;
+            padding-left: 96px;
+            padding-top: 64px;
+            padding-bottom: 183px;
+        }
+        
+        #agendar .section_header>div {
+            flex: 1;
+        }
+        
+        #agendar .section_header>div:last-of-type {
+            padding-top: 64px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5rem;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        #agendar .section_header>div:last-of-type>div {
+            max-width: 50%;
+            z-index: 2;
+        }
+        
+        .bg-blue {
+            width: 100%;
+            height: auto;
+            opacity: .8;
+            position: absolute;
+            z-index: 1;
+        }
+        
+        #agendar .section_header>:first-of-type img {
+            max-width: 2rem;
+        }
+        
+        #agendar .section_header>div:first-of-type span {
+            display: inline-block;
+            max-width: 18rem;
+        }
+        
+        sub>img {
+            bottom: -.7rem;
+        }
+        
+        .nombre {
+            font-size: 1rem;
+            font-weight: bold;
+        }
+        
+        .nombre-t {
+            font-size: .8rem;
+        }
+        
+        .subtext {
+            font-size: 1.3rem;
+        }
+        
+        .corner {
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: .9;
+            max-width: 283px;
+        }
+        
+        #agendar a>button {
+            color: white;
+            letter-spacing: unset;
+            font-family: normal;
+            font-size: 1rem;
+            font-weight: bolder;
+            background: var(--hard-sell-button);
+            border-radius: 5px;
+            padding: .4rem 4rem;
+            margin-top: .2rem;
+            border: none;
+        }
+    </style>
     <section id="agendar">
-        <div class="section_header">Agenda una cita para conocer todos los detalles Conviértete en asesor de seguros y comiences a ganar más de 40,000 pesos al mes.
-            <a><button>∑¡Quiero agendar una cita!</button></a>
+        <div class="section_header">
+            <div>
+                <div>
+                    <img src="img/quote-open.svg" /><br>
+                    <span>
+                    Soy dueña de mi tiempo, organizo mi agenda a mi conveniencia, tengo tiempo para mi familia, para ir al gimnasio, el esfuerzo y dedicación a mi trabajo es grandemente<br>remunerado.
+                    <sub><img src="img/quote-close.svg" /></sub>
+                </span>
+                    <br><br>
+
+                    <span class="nombre">-María Fernanda Yeomans</span>
+                    <br>
+                    <span class="nombre-t">Asesor CLERIS</span>
+                </div>
+            </div>
+            <div>
+                <img src="img/bg-agendar-band.svg" alt="" class="bg-blue" />
+                <img src="img/corner.png" class="corner" />
+                <div>
+                    <span><b>Agenda <u>una cita</u> para</b> <br> conocer todos los detalles</span><br>
+                    <span class="subtext">y comiences a ganar más de <br> 40,000 pesos al mes.</span>
+                    <br>
+                    <a><button>¡Quiero agendar una cita!</button></a>
+                </div>
+            </div>
         </div>
         <div class="section_content">
-            <h1>Características de un asesor CLERIS</h1>
-
         </div>
     </section>
     <section id="form">
-        <div class="section_header"></div>
+        <div class="section_header">
+            <h1>Características de un asesor <b>CLERIS</b></h1>
+        </div>
         <div class="section_content"></div>
     </section>
 </body>

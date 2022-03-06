@@ -382,7 +382,7 @@ sub>img {
     font-size: 1.5rem;
 }
 
-#agendar .section_content>div {
+#agendar .agendar-lista {
     display: flex;
     flex-direction: row;
     align-content: center;
@@ -390,7 +390,7 @@ sub>img {
     justify-content: space-evenly;
 }
 
-#agendar .section_content>div>div {
+#agendar .agendar-lista>div {
     background-color: var(--text);
     color: var(--white);
     display: flex;
@@ -404,7 +404,7 @@ sub>img {
     border-radius: 8px;
 }
 
-#agendar .section_content>div>div>div:first-of-type {
+#agendar .agendar-lista>div>div:first-of-type>div {
     height: 92px;
     width: 92px;
     border-radius: 50%;
@@ -416,9 +416,40 @@ sub>img {
     align-items: center;
 }
 
-#agendar .section_content>div>div>div:last-of-type {
+#agendar .agendar-lista>div>div:last-of-type {
     max-width: 126px;
     font-size: 1rem;
+}
+
+@media screen and (max-width: 680px) {
+    #agendar .agendar-lista {
+        flex-direction: column;
+    }
+    #agendar .agendar-lista>div {
+        width: unset;
+        height: 80px;
+        flex-direction: row;
+        display: flex!important;
+        margin-bottom: 1rem;
+        background-color: var(--white);
+        justify-content: flex-start;
+    }
+    #agendar .agendar-lista>div>div:last-of-type {
+        background-color: var(--text);
+        max-width: unset;
+        width: 100%;
+        height: 100%;
+        text-align: left;
+        display: flex;
+        border-radius: 8px;
+        align-items: inherit;
+        padding-left: .5rem;
+    }
+    #agendar .agendar-lista>div>div:first-of-type>div {
+        background-color: var(--white);
+        color: var(--text);
+        transform: scale(.8);
+    }
 }
 
 #contacto {
@@ -480,6 +511,8 @@ sub>img {
 #contacto>div:first-child span {
     font-size: 1.5rem;
 }
+
+#footer {}
 
 @media screen and (max-width: 680px) {
     .band {

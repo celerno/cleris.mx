@@ -475,12 +475,14 @@ sub>img {
     font-size: 1rem;
     height: 2rem;
     border-style: none;
+    color: var(--text);
 }
 
 #contacto input::placeholder {
     color: var(--textAlpha);
     font-weight: 100;
     text-align: center;
+    font-size: .8rem;
 }
 
 #contacto button {

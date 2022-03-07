@@ -1,7 +1,7 @@
 :root {
     --text: #013176;
     --title: #0066FF;
-    --bg: #E6E6E6;
+    --bg: #F6F5F5;
     --white: #FFF;
     --hard-sell-button: #1FD151;
 }
@@ -26,10 +26,9 @@ body {
 section {
     display: block;
     align-self: center;
-    max-width: 1090px;
+    max-width: 100vw;
     width: 100%;
     color: var(--text);
-    background-color: var(--bg);
 }
 
 h1,
@@ -132,7 +131,7 @@ section>div.section_content>div {
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
-    height: 580px;
+    height: 97vh;
     position: relative;
 }
 
@@ -165,6 +164,11 @@ div.video {
     flex: 1;
 }
 
+#home>.section_content>div>div {
+    padding-top: 6rem;
+    max-width: 33vw;
+}
+
 .band>div {
     position: relative;
     padding: 0 5rem;
@@ -177,6 +181,7 @@ div.video {
     line-height: 1.3;
     display: flex;
     flex-direction: row;
+    height: 100vh;
 }
 
 #faq>section {
@@ -238,7 +243,7 @@ div.video {
 }
 
 #asesoria>.section_header {
-    margin-top: 4rem;
+    padding: 2rem 4rem;
     font-size: 2rem;
     color: var(--text);
 }
@@ -272,25 +277,6 @@ div.video {
 .lista .descripcion {
     margin-top: 10px;
     font-size: .7rem;
-}
-
-@media screen and (max-width: 680px) {
-    #asesoria>.section_header {
-        background-color: var(--bg);
-    }
-    .lista {
-        flex-direction: column;
-    }
-    .grupo {
-        flex-direction: row;
-        max-width: unset;
-    }
-    .imagen {
-        margin-right: .7rem;
-    }
-    .imagen>img {
-        max-width: 60px;
-    }
 }
 
 #agendar .section_header {
@@ -661,5 +647,46 @@ sub>img {
     .firma {
         bottom: 10%;
         right: 10%;
+    }
+    #home>.section_content {
+        height: unset;
+    }
+    #home>.section_content>div>div {
+        padding-top: unset;
+        max-width: unset;
+    }
+    #asesoria {
+        background-color: var(--title);
+    }
+    #asesoria .section_header {
+        color: var(--white);
+        font-size: 1.5rem;
+    }
+    .lista {
+        flex-direction: column;
+        padding: 0 !important;
+        max-width: unset;
+    }
+    .lista .titulo,
+    .lista .descripcion {
+        text-align: left;
+    }
+    .grupo {
+        flex-direction: row;
+        max-width: unset;
+        margin: 5px 0;
+        padding: 2rem;
+    }
+    .grupo:nth-child(odd) {
+        background-color: var(--white);
+    }
+    .imagen {
+        margin-right: .7rem;
+    }
+    .imagen>img {
+        max-width: 60px;
+    }
+    #asesoria>.section_content {
+        background-color: var(--bg);
     }
 }

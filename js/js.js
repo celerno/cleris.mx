@@ -23,17 +23,20 @@ $('.single-item').slick({
 $('#prospectos').submit(function(e) {
     e.preventDefault();
     let datos = $(e.target).serializeObject();
-    let url = 'https://script.google.com/macros/s/AKfycbyjJ0xWlF5ChTWPm5EjGO2McmqTQptyG_4WRonYw6o/exec';
+    let url = 'https://script.google.com/macros/s/AKfycby2WYEFo_kfM55AEHIl7kZlf4W1GpNCQAuPawAFgZYNOH5Dziw0oZHAbfC6YelFBKW-/exec';
     $.ajax({
+        crossDomin: true,
+        redirect: "follow",
         url: url,
         method: "POST",
         dataType: "json",
         data: datos,
-        success: function() {
+        success: function(data) {
             $('.gracias').fadeIn(1000).fadeOut(300);
+            console.log(data);
         },
         error: function(error) {
-            alert(error);
+            //  alert(error);
         }
     });
 });

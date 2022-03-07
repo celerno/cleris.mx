@@ -497,7 +497,7 @@ sub>img {
     font-weight: 900;
 }
 
-#contacto .form {
+#contacto .form>form {
     margin-top: 2rem;
     display: flex;
     flex-direction: row;
@@ -631,10 +631,10 @@ sub>img {
     #contacto {
         background-color: var(--title);
     }
-    #contacto .form {
+    #contacto .form>form {
         flex-direction: column;
     }
-    #contacto .form>div {
+    #contacto .form>form>div {
         margin-bottom: .2rem;
     }
     .testimonio-1>div,

@@ -32,7 +32,7 @@
                 <div>
                     <span>Descubre cómo ganar <b><u>40,000 pesos</u></b> mensuales.</span>
 
-                    <a href="#form">
+                    <a href="#contacto">
                         <button>
                             <strong>Da click aquí</strong> para obtener más información.
                         </button>
@@ -321,13 +321,18 @@
             <div>
                 <div>Deja tus datos para conocer <u>todos los detalles.</u></div>
                 <div class="form">
-                    <div><input type="text" placeholder="Nombre y Apellido"></div>
-                    <div><input type="text" placeholder="Celular / Whatsapp"></div>
-                    <div><button type="submit">Enviar</button></div>
+                    <form id="prospectos" action="/" method="post">
+                        <div><input type="text" name="Nombre" required placeholder="Nombre y Apellido"></div>
+                        <div><input type="text" name="Celular" required placeholder="Celular / Whatsapp"></div>
+                        <div><button type="submit">Enviar</button></div>
+                    </form>
+                    <span class=".gracias" style="display: none;">gracias, nos comunicaremos a la brevedad.</span>
                 </div>
             </div>
         </div>
     </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-serialize-object/2.5.0/jquery.serialize-object.min.js" integrity="sha512-Gn0tSSjkIGAkaZQWjx3Ctl/0dVJuTmjW/f9QyB302kFjU4uTNP4HtA32U2qXs/TRlEsK5CoEqMEMs7LnzLOBsA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="js/js.js" type="text/javascript"></script>
 </body>

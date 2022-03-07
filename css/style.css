@@ -642,4 +642,8 @@ sub>img {
     span.testimonio {
         max-width: 9rem;
     }
+    .firma {
+        bottom: 10%;
+        right: 10%;
+    }
 }

@@ -292,7 +292,7 @@ section>div.section_content>div {
     padding-left: 96px;
     padding-top: 64px;
     padding-bottom: 183px;
-    height: 611px;
+    height: 400px;
 }
 
 .testimonio-1,
@@ -318,6 +318,11 @@ section>div.section_content>div {
 
 .testimonio-4 {
     background-image: url(../img/Testimonio4.png);
+}
+
+span.testimonio {
+    display: inline-block;
+    max-width: 18rem;
 }
 
 #agendar .section_header>div {
@@ -626,7 +631,7 @@ sub>img {
         padding-bottom: 50px;
         height: 200px;
     }
-    .testimonios span {
+    span.testimonio {
         max-width: 9rem;
     }
 }

@@ -15,7 +15,7 @@ $("#faq > section.section_content > div > div > div > div:first-child > a").clic
 $('.single-item').slick({
     infinite: true,
     slidesToShow: 1,
-    speed: 600,
+    speed: 700,
     autoplay: true,
     arrows: false,
     adaptativeHeight: true

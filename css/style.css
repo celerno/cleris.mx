@@ -1,5 +1,6 @@
 :root {
     --text: #013176;
+    --textAlpha: #0132768f;
     --title: #0066FF;
     --bg: #F6F5F5;
     --white: #FFF;
@@ -295,7 +296,7 @@ div.video {
     padding-left: 96px;
     padding-top: 64px;
     padding-bottom: 183px;
-    height: 400px;
+    height: 100%;
 }
 
 .testimonio-1,
@@ -305,6 +306,7 @@ div.video {
     background-position: center top;
     background-size: cover;
     background-repeat: no-repeat;
+    height: 100vh;
 }
 
 .testimonio-1 {
@@ -325,7 +327,8 @@ div.video {
 
 span.testimonio {
     display: inline-block;
-    max-width: 18rem;
+    max-width: 22rem;
+    font-size: 2rem;
 }
 
 #agendar .section_header>div {
@@ -376,9 +379,9 @@ sub>img {
 }
 
 .firma {
-    position: absolute;
+    /*position: absolute;
     bottom: 20%;
-    right: 20%;
+    right: 20%;*/
 }
 
 .subtext {
@@ -475,7 +478,7 @@ sub>img {
 }
 
 #contacto input::placeholder {
-    color: var(--text);
+    color: var(--textAlpha);
     font-weight: 100;
     text-align: center;
 }
@@ -645,6 +648,7 @@ sub>img {
         max-width: 9rem;
     }
     .firma {
+        position: absolute;
         bottom: 10%;
         right: 10%;
     }

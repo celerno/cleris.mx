@@ -285,8 +285,10 @@ section>div.section_content>div {
     letter-spacing: 1px;
 }
 
-#agendar>.section_header>div:first-of-type {
-    background-image: url(../img/agendar-header.png);
+.testimonio-1,
+.testimonio-2,
+.testimonio-3,
+.testimonio-4 {
     background-position: center top;
     background-size: cover;
     background-repeat: no-repeat;
@@ -295,11 +297,27 @@ section>div.section_content>div {
     padding-bottom: 183px;
 }
 
+.testimonio-1 {
+    background-image: url(../img/Testimonio1.png);
+}
+
+.testimonio-2 {
+    background-image: url(../img/Testimonio2.png);
+}
+
+.testimonio-3 {
+    background-image: url(../img/Testimonio3.png);
+}
+
+.testimonio-4 {
+    background-image: url(../img/Testimonio4.png);
+}
+
 #agendar .section_header>div {
     flex: 1;
 }
 
-#agendar .section_header>div:last-of-type {
+#agendar .agenda-cita {
     padding-top: 64px;
     text-align: center;
     display: flex;
@@ -531,18 +549,10 @@ sub>img {
     .hide_m {
         display: none;
     }
-    #agendar>.section_header>div:first-of-type {
-        background-size: cover;
-        background-image: url(../img/bg-agenda-m.png);
-        padding-left: 40px;
-        padding-top: 40px;
-        padding-bottom: 0;
-        min-height: 253px;
-    }
-    #agendar>.section_header>div:first-of-type>div {
+    .testimonios>div>div {
         font-size: .7rem;
     }
-    #agendar .section_header>div:first-of-type span {
+    .testimonios span {
         max-width: 11rem;
     }
     .nombre,

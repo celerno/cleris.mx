@@ -12,6 +12,14 @@ $("#faq > section.section_content > div > div > div > div:first-child > a").clic
         e.delegateTarget.dataset.visible = 1;
     }
 });
+$('.testimonios').slick({
+    infinite: true,
+    slidesToShow: 1,
+    speed: 1000,
+    autoplay: false,
+    arrows: false,
+    adaptativeHeight: false
+});
 /*
 $('#agendar .section_content>div>div>div:first-of-type').fadeIn();
 */

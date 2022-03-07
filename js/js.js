@@ -12,13 +12,13 @@ $("#faq > section.section_content > div > div > div > div:first-child > a").clic
         e.delegateTarget.dataset.visible = 1;
     }
 });
-$('.testimonios').slick({
+$('.single-item').slick({
     infinite: true,
     slidesToShow: 1,
-    speed: 1000,
-    autoplay: false,
+    speed: 600,
+    autoplay: true,
     arrows: false,
-    adaptativeHeight: false
+    adaptativeHeight: true
 });
 /*
 $('#agendar .section_content>div>div>div:first-of-type').fadeIn();

@@ -285,6 +285,16 @@ section>div.section_content>div {
     letter-spacing: 1px;
 }
 
+.testimonio-1>div,
+.testimonio-2>div,
+.testimonio-3>div,
+.testimonio-4>div {
+    padding-left: 96px;
+    padding-top: 64px;
+    padding-bottom: 183px;
+    height: 611px;
+}
+
 .testimonio-1,
 .testimonio-2,
 .testimonio-3,
@@ -292,9 +302,6 @@ section>div.section_content>div {
     background-position: center top;
     background-size: cover;
     background-repeat: no-repeat;
-    padding-left: 96px;
-    padding-top: 64px;
-    padding-bottom: 183px;
 }
 
 .testimonio-1 {
@@ -342,13 +349,8 @@ section>div.section_content>div {
     z-index: 1;
 }
 
-#agendar .section_header>div:first-of-type img {
+#agendar .quote {
     max-width: 2rem;
-}
-
-#agendar .section_header>div:first-of-type span {
-    display: inline-block;
-    max-width: 18rem;
 }
 
 sub>img {
@@ -553,7 +555,8 @@ sub>img {
         font-size: .7rem;
     }
     .testimonios span {
-        max-width: 11rem;
+        display: inline-block;
+        max-width: 12rem;
     }
     .nombre,
     .nombre-t {
@@ -613,5 +616,17 @@ sub>img {
     }
     #contacto .form>div {
         margin-bottom: .2rem;
+    }
+    .testimonio-1>div,
+    .testimonio-2>div,
+    .testimonio-3>div,
+    .testimonio-4>div {
+        padding-left: 40px;
+        padding-top: 20px;
+        padding-bottom: 50px;
+        height: 200px;
+    }
+    .testimonios span {
+        max-width: 9rem;
     }
 }

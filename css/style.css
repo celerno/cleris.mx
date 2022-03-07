@@ -289,6 +289,7 @@ section>div.section_content>div {
 .testimonio-2>div,
 .testimonio-3>div,
 .testimonio-4>div {
+    position: relative;
     padding-left: 96px;
     padding-top: 64px;
     padding-bottom: 183px;
@@ -356,6 +357,7 @@ span.testimonio {
 
 #agendar .quote {
     max-width: 2rem;
+    display: inline-block !important;
 }
 
 sub>img {
@@ -369,6 +371,12 @@ sub>img {
 
 .nombre-t {
     font-size: .8rem;
+}
+
+.firma {
+    position: absolute;
+    bottom: 20%;
+    right: 20%;
 }
 
 .subtext {

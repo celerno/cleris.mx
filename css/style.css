@@ -198,7 +198,7 @@ div.video {
     max-width: 33vw;
 }
 
-.band>div {
+#home>section. .band>div {
     position: relative;
     padding: 0 5rem;
     max-width: 20rem;
@@ -572,6 +572,9 @@ sub>img {
 #footer {}
 
 @media screen and (max-width: 680px) {
+    body {
+        font-size: 10px;
+    }
     .band {
         text-align: center;
         justify-content: center;
@@ -633,9 +636,6 @@ sub>img {
     #agendar .section_header>div:first-of-type img {
         max-width: 1.3rem;
     }
-}
-
-@media screen and (max-width: 680px) {
     #agendar .agendar-lista {
         flex-direction: column;
     }

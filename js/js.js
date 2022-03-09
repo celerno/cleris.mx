@@ -1,3 +1,12 @@
+function playVideo() {
+    if (player && YT && player.getPlayerState() !== YT.PlayerState.PLAYING) {
+        player.playVideo();
+        if (player.isMuted()) {
+            player.unMute();
+        }
+
+    }
+}
 $("#faq > section.section_content > div > div > div > div:first-child > a").click(function(e) {
     e.preventDefault();
     let n = e.delegateTarget.dataset.n;

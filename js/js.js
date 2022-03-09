@@ -19,9 +19,9 @@ $("#faq > section.section_content > div > div > div > div:first-child > a").clic
 $('.single-item').slick({
     infinite: true,
     slidesToShow: 1,
-    speed: 700,
+    speed: 1000,
     autoplay: true,
-    arrows: false,
+    arrows: true,
     adaptativeHeight: true
 });
 $('#prospectos').submit(function(e) {
@@ -44,6 +44,3 @@ $('#prospectos').submit(function(e) {
         }
     });
 });
-/*
-$('#agendar .section_content>div>div>div:first-of-type').fadeIn();
-*/

@@ -652,6 +652,9 @@ sub>img {
         padding-top: unset;
         justify-content: flex-start;
     }
+    .lista {
+        text-align: left;
+    }
     #agendar .agendar-lista>div>div:last-of-type {
         background-color: var(--text);
         max-width: unset;
@@ -759,9 +762,11 @@ sub>img {
     #faq>section .texto {
         font-size: calc(2*var(--font-size));
     }
+    #agendar .subtitulo,
     #faq .subtitulo {
         font-size: calc(3*var(--font-size));
     }
+    #agendar,
     #contacto {
         font-size: calc(1.5*var(--font-size));
     }

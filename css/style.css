@@ -5,20 +5,21 @@
     --bg: #F6F5F5;
     --white: #FFF;
     --hard-sell-button: #1FD151;
+    --font-size: 1vw;
 }
 
 .texto {
-    font-size: 1.2vw;
+    font-size: calc(1.2 * var(--font-size));
     font-weight: 400;
 }
 
 h1,
 .titulo {
-    font-size: 3vw;
+    font-size: calc(3 * var(--font-size));
 }
 
 .texto-titulo {
-    font-size: 1.2vw;
+    font-size: calc(1.2*var(--font-size));
     font-weight: 500;
     text-transform: uppercase;
 }
@@ -28,20 +29,20 @@ h1,
 }
 
 .subtitulo {
-    font-size: 2vw;
+    font-size: calc(2 * var(--font-size));
 }
 
 .agendar-lista .subtitulo {
     font-weight: 500;
-    font-size: 5vw;
+    font-size: calc(5 * var(--font-size));
 }
 
 #home>.section_header .titulo {
-    font-size: 4vw;
+    font-size: calc(4 * var(--font-size));
 }
 
 .texto-small {
-    font-size: 1vw;
+    font-size: calc(1 * var(--font-size));
 }
 
 html,
@@ -52,7 +53,7 @@ body {
     flex-direction: column;
     margin: 0;
     font-family: 'Roboto', sans-serif;
-    font-size: 1vw;
+    font-size: calc(1 * var(--font-size));
     font-weight: 400;
 }
 
@@ -109,7 +110,7 @@ h2 {
 */
 
 button {
-    font-size: 1.5vw;
+    font-size: calc(1.5 * var(--font-size));
     cursor: pointer;
 }
 
@@ -146,7 +147,7 @@ section {
 }
 
 section>div.section_content>div {
-    padding: 2rem;
+    padding: 1vw;
 }
 
 #home {
@@ -237,7 +238,7 @@ div.video {
 
 #faq>section.section_header b {}
 
-#faq>section.section_content>div {
+#faq>section.section>div>div {
     display: flex;
     flex-direction: column;
 }
@@ -247,8 +248,10 @@ div.video {
     flex-direction: row;
     background-color: #E5E5E5;
     margin-bottom: 10px;
-    padding: .5rem 1rem;
+    padding: 1vw 1vw;
     border-radius: 8px;
+    margin-left: 4vw;
+    margin-right: 4vw;
 }
 
 #faq>section.section_content>div>div>div:first-child {
@@ -313,7 +316,7 @@ div.video {
 }
 
 .lista .descripcion {
-    margin-top: 10px;
+    margin-top: .1vw;
 }
 
 #agendar .section_header {
@@ -329,9 +332,8 @@ div.video {
 .testimonio-3>div,
 .testimonio-4>div {
     position: relative;
-    padding-left: 96px;
-    padding-top: 64px;
-    padding-bottom: 183px;
+    padding-left: 10vw;
+    padding-top: 5vh;
     height: 100%;
 }
 
@@ -363,8 +365,8 @@ div.video {
 
 span.testimonio {
     display: inline-block;
-    max-width: 22rem;
-    /** font-size: 2rem; **/
+    font-size: calc(2*var(--font-size));
+    max-width: 25vw;
 }
 
 #agendar .section_header>div {
@@ -398,7 +400,7 @@ span.testimonio {
 }
 
 #agendar .quote {
-    max-width: 2rem;
+    max-width: 2vw;
     display: inline-block !important;
 }
 
@@ -407,11 +409,11 @@ sub>img {
 }
 
 .nombre {
-    /** font-size: 1rem; **/
+    font-size: calc(2*var(--font-size));
 }
 
 .nombre-t {
-    /** font-size: .8rem; **/
+    font-size: calc(2*var(--font-size));
 }
 
 .firma {
@@ -459,6 +461,7 @@ sub>img {
     align-content: center;
     text-align: center;
     justify-content: center;
+    padding: 8vw;
 }
 
 #agendar .agendar-lista>div {
@@ -481,8 +484,8 @@ sub>img {
 }
 
 #agendar .agendar-lista>div>div:first-of-type>div {
-    height: 6vw;
-    width: 6vw;
+    height: 14vw;
+    width: 14vw;
     border-radius: 50%;
     border: .18vw solid var(--title);
     display: flex;
@@ -509,13 +512,13 @@ sub>img {
     width: 100%;
     border-style: none;
     color: var(--text);
-    font-size: 1.5vw;
+    font-size: calc(1.5 * var(--font-size));
 }
 
 #contacto input::placeholder {
     color: var(--textAlpha);
     text-align: center;
-    font-size: 1.2vw;
+    font-size: calc(1.2 * var(--font-size));
     font-weight: 100;
 }
 
@@ -561,6 +564,9 @@ sub>img {
 #footer {}
 
 @media screen and (max-width: 680px) {
+     :root {
+        --font-size: 2vw;
+    }
     body {
         /** font-size: 10px; **/
     }
@@ -570,8 +576,16 @@ sub>img {
         /** font-size: 1.5rem; **/
     }
     .band>div {
-        width: 45%;
         padding: 0;
+    }
+    .testimonio-1,
+    .testimonio-2,
+    .testimonio-3,
+    .testimonio-4 {
+        background-position: center top;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 50vh;
     }
     .band::before {
         transform: none;
@@ -581,13 +595,14 @@ sub>img {
     #home>.section_header {
         background-image: url(../img/bg-home-m.png);
         flex-direction: column;
-        height: unset;
+        height: 50vh;
     }
     #home>.section_content {
         background-image: url(../img/bg-sobre-m.png);
-        background-position: bottom right;
+        background-position: top right;
         background-size: 55%;
         background-repeat: no-repeat;
+        min-height: 50vh;
     }
     #home>.section_content::before {
         width: 80%;
@@ -602,7 +617,7 @@ sub>img {
     #home>.section_content>div {
         max-width: 60%;
         position: relative;
-        font-size: calc(.7rem);
+        /*font-size: calc(.7rem);*/
     }
     .logo {
         display: inline;
@@ -622,30 +637,32 @@ sub>img {
         max-width: none !important;
     }
     #agendar .section_header>div:first-of-type img {
-        max-width: 1.3rem;
+        max-width: 4vw;
     }
     #agendar .agendar-lista {
         flex-direction: column;
     }
     #agendar .agendar-lista>div {
         width: unset;
-        height: 80px;
+        height: 15vw;
         flex-direction: row;
         display: flex!important;
-        margin-bottom: 1rem;
+        margin-bottom: unset;
         background-color: var(--white);
+        padding-top: unset;
         justify-content: flex-start;
     }
     #agendar .agendar-lista>div>div:last-of-type {
         background-color: var(--text);
         max-width: unset;
         width: 100%;
-        height: 100%;
+        height: 14vw;
         text-align: left;
         display: flex;
         border-radius: 8px;
         align-items: inherit;
         padding-left: .5rem;
+        font-size: calc(2* var(--font-size));
     }
     #agendar .agendar-lista>div>div:first-of-type>div {
         background-color: var(--white);
@@ -670,20 +687,19 @@ sub>img {
         flex-direction: column;
     }
     #contacto .form>form>div {
-        margin-bottom: .2rem;
+        margin-bottom: .5vh;
         margin-left: unset;
     }
-    .testimonio-1>div,
-    .testimonio-2>div,
-    .testimonio-3>div,
-    .testimonio-4>div {
-        padding-left: 40px;
-        padding-top: 20px;
-        padding-bottom: 50px;
-        height: 200px;
+    .testimonio-1>div>div,
+    .testimonio-2>div>div,
+    .testimonio-3>div>div,
+    .testimonio-4>div>div {
+        padding-left: unset;
+        padding-top: unset;
+        padding-bottom: unset;
     }
     span.testimonio {
-        max-width: 9rem;
+        max-width: 40vw;
     }
     .firma {
         position: absolute;
@@ -715,9 +731,9 @@ sub>img {
     }
     .grupo {
         flex-direction: row;
-        max-width: unset;
-        margin: 5px 0;
-        padding: 2rem;
+        max-width: 50vh;
+        margin: .5vw 0;
+        padding: 1vw;
     }
     .grupo:nth-child(odd) {
         background-color: var(--white);
@@ -730,5 +746,30 @@ sub>img {
     }
     #asesoria>.section_content {
         background-color: var(--bg);
+    }
+    .texto-titulo {
+        font-size: calc(2*var(--font-size));
+    }
+    element.style {
+        display: block;
+    }
+    #faq>section.section_content span:last-child {
+        max-width: unset;
+    }
+    #faq>section .texto {
+        font-size: calc(2*var(--font-size));
+    }
+    #faq .subtitulo {
+        font-size: calc(3*var(--font-size));
+    }
+    #contacto {
+        font-size: calc(1.5*var(--font-size));
+    }
+    #contacto input {
+        font-size: calc(2*var(--font-size));
+    }
+    #faq>section.section_content>div>div>div:first-child {
+        padding-top: .5vh;
+        padding-left: 3vw;
     }
 }

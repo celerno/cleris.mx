@@ -291,7 +291,6 @@ div.video {
 .lista {
     display: flex;
     flex-direction: row;
-    max-width: 80%;
 }
 
 .grupo {

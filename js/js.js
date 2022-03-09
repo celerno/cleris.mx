@@ -1,6 +1,14 @@
+var firstScroll = true;
+
 function playVideo() {
     if (player && YT && player.getPlayerState() !== YT.PlayerState.PLAYING) {
-        player.playVideo();
+        setTimeout(function() {
+            if (firstScroll) {
+                player.playVideo();
+                firstScroll = false;
+            }
+        }, 200);
+
         if (player.isMuted()) {
             player.unMute();
         }

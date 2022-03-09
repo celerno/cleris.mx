@@ -21,7 +21,7 @@ $('.single-item').slick({
     slidesToShow: 1,
     speed: 1000,
     autoplay: true,
-    arrows: true,
+    arrows: false,
     adaptativeHeight: true
 });
 $('#prospectos').submit(function(e) {

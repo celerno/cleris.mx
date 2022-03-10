@@ -1,3 +1,4 @@
+@import url(https://db.onlinewebfonts.com/c/066ce24dae3730ed6c648b09efaea93a?family=Acumin+Variable+Concept);
 :root {
     --text: #013176;
     --textAlpha: #0132768f;
@@ -6,6 +7,12 @@
     --white: #FFF;
     --hard-sell-button: #1FD151;
     --font-size: 1vw;
+}
+
+@font-face {
+    font-family: "Acumin Variable Concept";
+    src: url("//db.onlinewebfonts.com/t/066ce24dae3730ed6c648b09efaea93a.eot");
+    src: url("//db.onlinewebfonts.com/t/066ce24dae3730ed6c648b09efaea93a.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/066ce24dae3730ed6c648b09efaea93a.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/066ce24dae3730ed6c648b09efaea93a.woff") format("woff"), url("//db.onlinewebfonts.com/t/066ce24dae3730ed6c648b09efaea93a.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/066ce24dae3730ed6c648b09efaea93a.svg#Acumin Variable Concept") format("svg");
 }
 
 .texto {
@@ -36,11 +43,6 @@ a {
     text-decoration: none;
 }
 
-.agendar-lista .subtitulo {
-    font-weight: 500;
-    font-size: calc(5 * var(--font-size));
-}
-
 #home>.section_header .titulo {
     font-size: calc(4 * var(--font-size));
     display: block;
@@ -58,7 +60,7 @@ body {
     align-content: center;
     flex-direction: column;
     margin: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Acumin Variable Concept';
     font-size: calc(1 * var(--font-size));
     font-weight: 400;
 }
@@ -462,40 +464,51 @@ sub>img {
     align-content: center;
     text-align: center;
     justify-content: center;
-    padding: 8vw;
+    padding: 4vw;
 }
 
-#agendar .agendar-lista>div {
+#agendar .agendar-lista .card {
     background-color: var(--text);
     color: var(--white);
     display: flex;
     align-content: center;
     flex-direction: column;
     align-items: center;
-    width: 8vw;
-    height: 12vw;
-    border-radius: .5vw;
-    margin-right: 1vw;
-    padding-top: 1vw;
-    justify-content: flex-start;
+    width: 10vw;
+    height: 14vw;
+    border-radius: .3vw;
+    margin: 0 .45vw;
+    padding: 0;
+    justify-content: space-evenly;
 }
 
 #agendar .agendar-lista>div:last-child {
     margin-right: unset;
 }
 
-#agendar .agendar-lista>div>div:first-of-type>div {
-    height: 6vw;
-    width: 6vw;
+#agendar .agendar-lista .card .card-number {
+    height: 5.2vw;
+    width: 5.2vw;
     border-radius: 50%;
     border: .18vw solid var(--title);
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: calc(4.2 * var(--font-size));
+    position: relative;
+    font-weight: 400;
+}
+
+#agendar .agendar-lista .card .card-number>div {
+    position: absolute;
+    bottom: -0.3vw;
 }
 
 #agendar .agendar-lista>div>div:last-of-type {
-    margin: 1vw .1vw 0 .1vw;
+    font-weight: 400;
+    font-size: .8vw;
+    word-break: break-word;
+    max-width: 7vw;
 }
 
 #contacto {
@@ -667,12 +680,11 @@ sub>img {
         border-radius: 8px;
         align-items: inherit;
         padding-left: .5rem;
-        font-size: calc(2* var(--font-size));
+        font-size: calc(2 * var(--font-size));
     }
     #agendar .agendar-lista>div>div:first-of-type>div {
         background-color: var(--white);
         color: var(--text);
-        transform: scale(.8);
     }
     #agendar .section_header>div:last-of-type>div {
         max-width: unset;

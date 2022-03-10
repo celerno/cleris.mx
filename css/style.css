@@ -198,8 +198,9 @@ section {
 }
 
 #home>.section_content>div>div {
-    max-width: 33vw;
-    padding-top: 6vw;
+    max-width: 24vw;
+    padding-top: 4vw;
+    margin-bottom: 4vw;
 }
 
 #home>.section_content .band>div {
@@ -426,7 +427,7 @@ sub>img {
 }
 
 .subtext {
-    /** font-size: 1.3rem; **/
+    font-size: calc(2*var(--font-size));
 }
 
 .corner {
@@ -443,9 +444,11 @@ sub>img {
     /** font-size: 1.1rem; **/
     background: var(--hard-sell-button);
     border-radius: 5px;
-    padding: 1rem 4rem;
-    margin-top: 4.2rem;
+    padding: 1.3vh 1.5vh;
+    margin-top: 3vh;
     border: none;
+    font-size: calc(1.8*var(--font-size));
+    font-weight: 900;
 }
 
 #agendar .section_content {
@@ -654,12 +657,15 @@ sub>img {
     #agendar .section_header>div:first-of-type img {
         max-width: 4vw;
     }
+    #agendar .agenda-cita {
+        padding-top: 5vh;
+    }
     #agendar .agendar-lista {
         flex-direction: column;
     }
-    #agendar .agendar-lista>div {
+    #agendar .agendar-lista .card {
         width: unset;
-        height: 15vw;
+        height: unset;
         flex-direction: row;
         display: flex!important;
         margin-bottom: unset;
@@ -674,17 +680,27 @@ sub>img {
         background-color: var(--text);
         max-width: unset;
         width: 100%;
-        height: 14vw;
+        height: 16vw;
         text-align: left;
         display: flex;
-        border-radius: 8px;
+        border-radius: 2vw;
         align-items: inherit;
-        padding-left: .5rem;
+        padding-left: 5vw;
         font-size: calc(2 * var(--font-size));
+        margin-bottom: .5vw;
+        margin: 1vh 2vh 1vw 2vh;
     }
-    #agendar .agendar-lista>div>div:first-of-type>div {
-        background-color: var(--white);
+    #agendar .agendar-lista .card .card-number {
+        background-color: var(--bg);
         color: var(--text);
+        height: 6vh;
+        width: 10vh;
+        position: relative;
+    }
+    #agendar .agendar-lista .card .card-number>div {
+        position: relative;
+        height: unset;
+        width: unset;
     }
     #agendar .section_header>div:last-of-type>div {
         max-width: unset;
@@ -783,6 +799,8 @@ sub>img {
     #agendar .subtitulo,
     #faq .subtitulo {
         font-size: calc(3*var(--font-size));
+        display: block;
+        margin: 2vh 20vw;
     }
     #agendar,
     #contacto {

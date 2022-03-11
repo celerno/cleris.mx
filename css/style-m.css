@@ -38,13 +38,12 @@
         height: 50vh;
     }
     #home>.section_content {
-        background-image: url(../img/bg-sobre-m.png);
-        background-position: bottom right;
-        background-size: 45%;
+        background-position: top left -25vw;
+        background-size: cover;
         background-repeat: no-repeat;
         /* min-height: 50vh; */
     }
-    #home>.section_content::before {
+    /*#home>.section_content::before {
         width: 80%;
         height: 100%;
         right: 0;
@@ -53,7 +52,7 @@
         z-index: -1;
         content: '';
         opacity: .7;
-    }
+    }*/
     #home>.section_content>div {
         max-width: 60%;
         position: relative;
@@ -178,7 +177,7 @@
     }
     #asesoria .section_header {
         color: var(--white);
-        /** font-size: 1.5rem; **/
+        padding: 4vh 28vw 4vh 28vw;
     }
     #asesoria .section_content {
         padding: 4vw;
@@ -196,22 +195,33 @@
         flex-direction: row;
         max-width: 50vh;
         margin: .5vw 0;
-        padding: 1vw;
+        padding: 5vw 5vw 5vw 15vw;
+        align-items: unset;
+    }
+    .grupo-texto {
+        margin-left: 4vw;
+        padding-right: 15vw;
     }
     .grupo:nth-child(odd) {
         background-color: var(--white);
     }
-    .imagen {
-        margin-right: .7rem;
-    }
     .imagen>img {
-        max-width: 60px;
+        max-width: 12vw;
     }
     #asesoria>.section_content {
         background-color: var(--bg);
+        padding: 0;
+    }
+    .grupo-texto>.texto-small {
+        font-size: calc(1.2*var(--font-size));
     }
     .texto-titulo {
-        font-size: calc(2*var(--font-size));
+        font-size: calc(1.5*var(--font-size));
+        font-weight: bold;
+        margin-bottom: 1vh;
+    }
+    #faq .texto-titulo {
+        font-weight: 400;
     }
     element.style {
         display: block;
@@ -282,5 +292,9 @@
     }
     #agendar .section_content {
         padding: 8vw;
+    }
+    #home ul {
+        padding-inline-start: 0;
+        list-style-type: none;
     }
 }

@@ -142,6 +142,10 @@ img {
     display: initial;
 }
 
+.hide_d {
+    display: none;
+}
+
 section {
     flex-direction: column;
     display: flex;
@@ -326,7 +330,6 @@ section {
     /** font-size: 1.25rem; **/
     display: flex;
     flex-direction: column;
-    letter-spacing: 1px;
 }
 
 .testimonio-1>div,
@@ -403,11 +406,9 @@ span.testimonio {
 
 #agendar .quote {
     max-width: 2vw;
-    display: inline-block !important;
-}
-
-sub>img {
-    bottom: -.7rem;
+    display: inline-block;
+    break-after: always;
+    break-before: avoid;
 }
 
 .nombre {
@@ -574,280 +575,4 @@ sub>img {
 
 #contacto>div:first-child span {
     /** font-size: 1.5rem; **/
-}
-
-#footer {}
-
-@media screen and (max-width: 680px) {
-     :root {
-        --font-size: 2vw;
-    }
-    body {
-        /** font-size: 10px; **/
-    }
-    .section_header {
-        flex-direction: column-reverse;
-    }
-    .band {
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-        /** font-size: 1.5rem; **/
-    }
-    .band>div {
-        padding: 0;
-    }
-    .testimonio-1,
-    .testimonio-2,
-    .testimonio-3,
-    .testimonio-4 {
-        background-position: center top;
-        background-size: cover;
-        background-repeat: no-repeat;
-        height: 50vh;
-    }
-    .band::before {
-        transform: none;
-        background-image: url(../img/header-band-m.svg);
-        background-position: top center;
-    }
-    #home>.section_header {
-        background-image: url(../img/bg-home-m.png);
-        flex-direction: column;
-        height: 50vh;
-    }
-    #home>.section_content {
-        background-image: url(../img/bg-sobre-m.png);
-        background-position: bottom right;
-        background-size: 45%;
-        background-repeat: no-repeat;
-        /* min-height: 50vh; */
-    }
-    #home>.section_content::before {
-        width: 80%;
-        height: 100%;
-        right: 0;
-        background: linear-gradient(to bottom right, #fff 0%, #fff 50%, #E5E5E5 50%, #E5E5E5 100%);
-        position: absolute !important;
-        z-index: -1;
-        content: '';
-        opacity: .7;
-    }
-    #home>.section_content>div {
-        max-width: 60%;
-        position: relative;
-        /*font-size: calc(.7rem);*/
-    }
-    .hide_m {
-        display: none;
-    }
-    .testimonios>div>div {
-        /** font-size: .7rem; **/
-    }
-    .testimonios span {
-        display: inline-block;
-        max-width: 12rem;
-    }
-    .nombre,
-    .nombre-t {
-        max-width: none !important;
-    }
-    #agendar .section_header>div:first-of-type img {
-        max-width: 4vw;
-    }
-    #agendar .agenda-cita {
-        padding-top: 5vh;
-    }
-    #agendar .agendar-lista {
-        flex-direction: column;
-    }
-    #agendar .agendar-lista .card {
-        width: unset;
-        height: unset;
-        flex-direction: row;
-        display: flex!important;
-        margin-bottom: unset;
-        background-color: var(--white);
-        padding-top: unset;
-        justify-content: flex-start;
-    }
-    .lista {
-        text-align: left;
-    }
-    #agendar .agendar-lista>div>div:last-of-type {
-        background-color: var(--text);
-        max-width: unset;
-        width: 100%;
-        height: 16vw;
-        text-align: left;
-        display: flex;
-        border-radius: 2vw;
-        align-items: inherit;
-        padding-left: 5vw;
-        font-size: calc(2 * var(--font-size));
-        margin-bottom: .5vw;
-        margin: 1vh 2vh 1vw 2vh;
-    }
-    #agendar .agendar-lista .card .card-number {
-        background-color: var(--bg);
-        color: var(--text);
-        height: 6vh;
-        width: 10vh;
-        position: relative;
-    }
-    #agendar .agendar-lista .card .card-number>div {
-        position: relative;
-        height: unset;
-        width: unset;
-    }
-    #agendar .section_header>div:last-of-type>div {
-        max-width: unset;
-        /** font-size: 1rem; **/
-    }
-    .corner {
-        display: none;
-    }
-    .bg-blue {
-        height: 100%;
-        width: auto;
-    }
-    #contacto {
-        background-color: var(--title);
-    }
-    #contacto .form>form {
-        flex-direction: column;
-    }
-    #contacto .form>form>div {
-        margin-bottom: .5vh;
-        margin-left: unset;
-    }
-    .testimonio-1>div>div,
-    .testimonio-2>div>div,
-    .testimonio-3>div>div,
-    .testimonio-4>div>div {
-        padding-left: unset;
-        padding-top: unset;
-        padding-bottom: unset;
-    }
-    span.testimonio {
-        max-width: 40vw;
-    }
-    .firma {
-        position: absolute;
-        bottom: 10%;
-        right: 10%;
-    }
-    #home>.section_content {
-        height: unset;
-    }
-    #home>.section_content>div>div {
-        padding-top: 4vw;
-        max-width: unset;
-        padding-left: 4vw;
-    }
-    #asesoria {
-        background-color: var(--title);
-    }
-    #asesoria .section_header {
-        color: var(--white);
-        /** font-size: 1.5rem; **/
-    }
-    #asesoria .section_content {
-        padding: 4vw;
-    }
-    .lista {
-        flex-direction: column;
-        padding: 0 !important;
-        max-width: unset;
-    }
-    .lista .titulo,
-    .lista .descripcion {
-        text-align: left;
-    }
-    .grupo {
-        flex-direction: row;
-        max-width: 50vh;
-        margin: .5vw 0;
-        padding: 1vw;
-    }
-    .grupo:nth-child(odd) {
-        background-color: var(--white);
-    }
-    .imagen {
-        margin-right: .7rem;
-    }
-    .imagen>img {
-        max-width: 60px;
-    }
-    #asesoria>.section_content {
-        background-color: var(--bg);
-    }
-    .texto-titulo {
-        font-size: calc(2*var(--font-size));
-    }
-    element.style {
-        display: block;
-    }
-    #faq>section.section_content span:last-child {
-        max-width: unset;
-    }
-    #faq>section .texto {
-        font-size: calc(2*var(--font-size));
-    }
-    #agendar .subtitulo,
-    #faq .subtitulo {
-        font-size: calc(3*var(--font-size));
-        display: block;
-        margin: 2vh 20vw;
-    }
-    #agendar,
-    #contacto {
-        font-size: calc(1.5*var(--font-size));
-    }
-    #contacto input {
-        font-size: calc(2*var(--font-size));
-    }
-    #faq>section.section_content>div>div>div:first-child {
-        padding-top: .5vh;
-        padding-left: 3vw;
-    }
-    #agendar .agendar-lista>div>div:first-of-type>div {
-        height: 14vw;
-        width: 14vw;
-    }
-    #home .section_header {
-        padding: 0;
-        flex-direction: column-reverse;
-    }
-    #home .section_header .titulo {
-        font-size: calc(3*var(--font-size));
-        margin-bottom: 1vh;
-    }
-    .band {
-        background-color: var(--text);
-        height: 100%;
-    }
-    .video,
-    .video iframe {
-        position: relative;
-        top: unset;
-        transform: unset;
-        height: 100%;
-        width: 100%;
-        left: unset;
-        right: unset;
-        bottom: unset;
-    }
-    .band .logo {
-        margin: 6vw 0 4vw 0;
-        padding: 0;
-    }
-    .logo img {
-        width: 25vw;
-        height: auto;
-    }
-    .band button {
-        display: block;
-        margin-bottom: 1vh;
-    }
 }

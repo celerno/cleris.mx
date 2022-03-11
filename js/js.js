@@ -37,7 +37,7 @@ $('.single-item').slick({
     infinite: true,
     slidesToShow: 1,
     speed: 1000,
-    autoplay: true,
+    autoplay: false,
     arrows: false,
     adaptativeHeight: true
 });

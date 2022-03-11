@@ -227,6 +227,9 @@
         font-size: calc(3.5*var(--font-size));
         display: block;
     }
+    #agendar a>button {
+        font-size: calc(1.8*var(--font-size));
+    }
     #agendar,
     #contacto {
         font-size: calc(1.5*var(--font-size));

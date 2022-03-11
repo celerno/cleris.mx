@@ -13,6 +13,10 @@
     src: url("Acumin\ Variable\ Concept.ttf") format("truetype");
 }
 
+button {
+    cursor: pointer !important;
+}
+
 .texto {
     font-size: calc(1.2 * var(--font-size));
     font-weight: 400;
@@ -117,6 +121,9 @@ h2 {
 
 button {
     font-size: calc(1.5 * var(--font-size));
+}
+
+.faq-row {
     cursor: pointer;
 }
 
@@ -445,13 +452,12 @@ span>.quote {
 #agendar a>button {
     color: white;
     letter-spacing: unset;
-    /** font-size: 1.1rem; **/
+    font-size: var(--font-size);
     background: var(--hard-sell-button);
     border-radius: 5px;
     padding: 1.3vh 1.5vh;
     margin-top: 3vh;
     border: none;
-    font-size: calc(1.8*var(--font-size));
     font-weight: 900;
 }
 

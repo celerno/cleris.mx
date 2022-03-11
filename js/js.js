@@ -15,7 +15,7 @@ function playVideo() {
 
     }
 }
-$("#faq > section.section_content > div > div > div > div:first-child > a").click(function(e) {
+$("#faq .faq-row").click(function(e) {
     e.preventDefault();
     let n = e.delegateTarget.dataset.n;
     let active = parseInt(e.delegateTarget.dataset.visible);
@@ -37,7 +37,7 @@ $('.single-item').slick({
     infinite: true,
     slidesToShow: 1,
     speed: 1000,
-    autoplay: false,
+    autoplay: true,
     arrows: false,
     adaptativeHeight: true
 });

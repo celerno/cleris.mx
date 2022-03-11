@@ -411,6 +411,10 @@ span.testimonio {
     break-before: avoid;
 }
 
+span>.quote {
+    margin-left: 2vw;
+}
+
 .nombre {
     font-size: calc(2*var(--font-size));
 }
@@ -420,6 +424,7 @@ span.testimonio {
 }
 
 .firma {
+    margin-top: 4vh;
     /*position: absolute;
     bottom: 20%;
     right: 20%;*/

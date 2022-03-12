@@ -61,3 +61,54 @@ $('#prospectos').submit(function(e) {
         }
     });
 });
+var tag = document.createElement('script');
+
+tag.src = "https://www.youtube.com/iframe_api";
+var firstScriptTag = document.getElementsByTagName('script')[0];
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+// 3. This function creates an <iframe> (and YouTube player)
+//    after the API code downloads.
+var player;
+
+function onYouTubeIframeAPIReady() {
+    player = new YT.Player('player', {
+        videoId: 'pAsFai1LUAM',
+        heigh: '100%',
+        width: '100%',
+        playerVars: {
+            'playsinline': 1,
+            'enablejsapi': 1,
+            'autoplay': 0,
+            'theme': 'light',
+            'color': 'white'
+        },
+        events: {
+            'onReady': onPlayerReady,
+            'onStateChange': onPlayerStateChange
+        },
+
+    });
+}
+
+// 4. The API will call this function when the video player is ready.
+function onPlayerReady(event) {
+    console.log('youtube player loaded');
+}
+
+// 5. The API calls this function when the player's state changes.
+//    The function indicates that when playing a video (state=1),
+//    the player should play for six seconds and then stop.
+
+function onPlayerStateChange(event) {
+    console.log('youtube player state change: ' + event.data);
+    if (player && YT && player.getPlayerState() === YT.PlayerState.PLAYING || player.getPlayerState() === YT.PlayerState.BUFFERING) {
+        $('.band').css('opacity', '.5');
+    } else if (player && YT && player.getPlayerState() === YT.PlayerState.PAUSED) {
+        $('.band').css('opacity', 'unset');
+    }
+}
+
+function stopVideo() {
+    player.stopVideo();
+}

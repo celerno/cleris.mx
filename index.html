@@ -43,12 +43,8 @@
             <div></div>
             <div>
                 <div>
-                    <h1 class="hide_m">Sobre</h1>
                     <h1 class="hide_m"><b>Yolanda Yeomans</b></h1>
                     <div class="texto">
-                        <p class="hide_m">
-                            <b>Hola, soy Yolanda Yeomans.</b>
-                        </p>
                         <p>
                             Mi verdadera pasión es impulsar a más personas a alcanzar el éxito, porque sé de primera mano que
                             <b>si tomas el control de tu vida, cosas grandes pueden suceder;</b> además tengo todas las herramientas para ayudarte a lograrlo:
@@ -318,17 +314,17 @@
     <section id="contacto">
         <div>
             <div>
-                <span class="titulo">Conviértete en <br class="hide_d"/> <b>asesor de seguros</b><br /></span>
-                <span class="subtitulo">y toma <b>el control</b> de tu vida.</span>
+                <span class="titulo">Conviértete en <br/> <b>asesor de seguros</b><br /></span>
+                <span class="subtitulo">y <b>toma el control</b> de tu vida.</span>
             </div>
             <div>
-                <div>Deja tus datos para <br class="hide_d" /> conocer <u>todos los detalles.</u>
+                <div>Deja tus datos para <br class="hide_d" /> <u>agendar una cita.</u>
                 </div>
                 <div class="form">
                     <form id="prospectos" action="/" method="post">
                         <div><input type="text" name="Nombre" required placeholder="Nombre y Apellido"></div>
                         <div><input type="text" name="Celular" required placeholder="Celular / Whatsapp"></div>
-                        <div><button type="submit">Enviar</button></div>
+                        <div><button type="submit">Llámenme</button></div>
                     </form>
                     <span class=".gracias" style="display: none;">gracias, nos comunicaremos a la brevedad.</span>
                 </div>
@@ -377,58 +373,6 @@
         gtag('js', new Date());
 
         gtag('config', 'G-P76V06ZSBV');
-        var tag = document.createElement('script');
-
-        tag.src = "https://www.youtube.com/iframe_api";
-        var firstScriptTag = document.getElementsByTagName('script')[0];
-        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-        // 3. This function creates an <iframe> (and YouTube player)
-        //    after the API code downloads.
-        var player;
-
-        function onYouTubeIframeAPIReady() {
-            player = new YT.Player('player', {
-                videoId: 'pAsFai1LUAM',
-                playerVars: {
-                    'playsinline': 1,
-                    'enablejsapi': 1,
-                    'autoplay': 0,
-                    'theme': 'light',
-                    'color': 'white'
-                },
-                events: {
-                    'onReady': onPlayerReady,
-                    'onStateChange': onPlayerStateChange
-                },
-
-            });
-        }
-
-        // 4. The API will call this function when the video player is ready.
-        function onPlayerReady(event) {
-            console.log('youtube player loaded');
-        }
-
-        // 5. The API calls this function when the player's state changes.
-        //    The function indicates that when playing a video (state=1),
-        //    the player should play for six seconds and then stop.
-
-        function onPlayerStateChange(event) {
-            console.log('youtube player state change: ' + event.data);
-            if (player && YT && player.getPlayerState() === YT.PlayerState.PLAYING || player.getPlayerState() === YT.PlayerState.BUFFERING) {
-                $('.band').css('opacity', '.5');
-            } else if (player && YT && player.getPlayerState() === YT.PlayerState.PAUSED) {
-                $('.band').css('opacity', 'unset');
-            }
-        }
-
-        function stopVideo() {
-            player.stopVideo();
-        }
-        $('iframe').ready(function(e) {
-            // onYouTubeIframeAPIReady();
-        });
     </script>
 </body>
 

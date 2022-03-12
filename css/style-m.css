@@ -38,7 +38,7 @@
         height: 50vh;
     }
     #home>.section_content {
-        background-position: top left -25vw;
+        background-position: top left -10vw;
         background-size: cover;
         background-repeat: no-repeat;
         /* min-height: 50vh; */
@@ -139,7 +139,14 @@
         background-color: var(--title);
     }
     #contacto>div {
+        padding-top: 0;
         margin: 10vh 0;
+    }
+    #contacto>div>div:first-child {
+        margin-bottom: 0;
+    }
+    #contacto>div>div:last-child {
+        padding-top: 2vw;
     }
     #contacto .form>form {
         flex-direction: column;
@@ -178,8 +185,10 @@
     }
     #home>.section_content>div>div {
         padding-top: 4vw;
-        max-width: unset;
         padding-left: 4vw;
+    }
+    #home>.section_content .texto {
+        font-size: unset;
     }
     #asesoria {
         background-color: var(--title);

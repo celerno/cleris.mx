@@ -23,6 +23,10 @@ button {
     font-weight: 400;
 }
 
+#home>.section_content .texto {
+    font-size: calc(1.8 * var(--font-size));
+}
+
 h1,
 .titulo {
     font-size: calc(3 * var(--font-size));
@@ -208,7 +212,7 @@ section {
 }
 
 #home>.section_content>div>div {
-    max-width: 24vw;
+    max-width: 40vw;
     padding-top: 4vw;
     margin-bottom: 4vw;
 }
@@ -561,7 +565,7 @@ span.testimonio {
     color: white;
     background: var(--hard-sell-button);
     border-radius: 4px;
-    padding: .2vh .4vw;
+    padding: .5vh 1vw;
     border: none;
     width: 100%;
     text-transform: uppercase;
@@ -570,7 +574,7 @@ span.testimonio {
 }
 
 #contacto .form>form {
-    margin-top: 2rem;
+    margin-top: 2vw;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -582,19 +586,19 @@ span.testimonio {
     height: 100%;
 }
 
-#contacto>div:first-child {
-    padding-top: 4rem;
-}
-
 #contacto>div>div:first-child {
     /** font-size: 2rem; **/
-    margin-bottom: 2rem;
-}
-
-#contacto>div {
-    margin-bottom: 5rem;
 }
 
 #contacto>div:first-child span {
     /** font-size: 1.5rem; **/
+}
+
+#contacto>div {
+    padding-top: 0;
+    margin: 10vh 0;
+}
+
+#contacto>div>div:last-child {
+    margin-top: 4vw;
 }

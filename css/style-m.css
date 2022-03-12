@@ -138,12 +138,20 @@
     #contacto {
         background-color: var(--title);
     }
+    #contacto>div {
+        margin: 10vh 0;
+    }
     #contacto .form>form {
         flex-direction: column;
+    }
+    #contacto button {
+        width: 100%;
     }
     #contacto .form>form>div {
         margin-bottom: .5vh;
         margin-left: unset;
+        width: 100%;
+        margin-right: unset;
     }
     .testimonio-1>div,
     .testimonio-2>div,
@@ -245,7 +253,9 @@
         font-size: calc(1.5*var(--font-size));
     }
     #contacto input {
-        font-size: calc(2*var(--font-size));
+        font-size: calc(1*var(--font-size));
+        height: 8vw;
+        margin-bottom: 1vw;
     }
     #faq>section.section_content>div>div>div:first-child {
         padding-top: .5vh;
@@ -296,5 +306,8 @@
     #home ul {
         padding-inline-start: 0;
         list-style-type: none;
+    }
+    #faq>section.section_content>div>div {
+        border-radius: 4px;
     }
 }

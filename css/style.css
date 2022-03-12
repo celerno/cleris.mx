@@ -542,6 +542,7 @@ span.testimonio {
     justify-items: center;
     align-items: center;
     text-align: center;
+    height: 50vh;
 }
 
 #contacto input {
@@ -596,7 +597,7 @@ span.testimonio {
 
 #contacto>div {
     padding-top: 0;
-    margin: 10vh 0;
+    margin: 15vh 0;
 }
 
 #contacto>div>div:last-child {

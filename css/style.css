@@ -418,8 +418,13 @@ span.testimonio {
     break-before: avoid;
 }
 
-span>.quote {
+#agendar span.testimonio {
+    position: relative;
+}
+
+#agendar span.testimonio>.quote {
     margin-left: 2vw;
+    position: absolute;
 }
 
 .nombre {

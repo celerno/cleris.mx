@@ -289,6 +289,7 @@
         font-size: calc(1*var(--font-size));
         height: 8vw;
         margin-bottom: 1vw;
+        width: 98%;
     }
     #faq>section.section_content>div>div>div:first-child {
         padding-top: .5vh;
@@ -325,7 +326,6 @@
         bottom: unset;
     }
     footer {
-        text-align: center;
         font-size: var(--font-size);
     }
     .band .logo {

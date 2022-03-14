@@ -104,8 +104,11 @@ function onPlayerStateChange(event) {
     console.log('youtube player state change: ' + event.data);
     if (player && YT && player.getPlayerState() === YT.PlayerState.PLAYING || player.getPlayerState() === YT.PlayerState.BUFFERING) {
         $('.band').css('opacity', '.5');
+        $('.video>a').css('opacity', '.5');
+
     } else if (player && YT && player.getPlayerState() === YT.PlayerState.PAUSED) {
         $('.band').css('opacity', 'unset');
+        $('.video>a').css('opacity', 'unset');
     }
 }
 

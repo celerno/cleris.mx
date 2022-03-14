@@ -37,6 +37,23 @@
         flex-direction: column;
         height: 50vh;
     }
+    #home>.section_header .video a.hide_d {
+        display: block;
+        position: absolute;
+        bottom: 0%;
+        left: 50%;
+        transform: translate(-50%, -30%);
+        z-index: 1;
+        /* transform: translateX(30vw); */
+        width: 50vw;
+    }
+    #home>.section_header .video button {
+        background-color: var(--title);
+        border: none;
+        color: var(--white);
+        border-radius: 2vw;
+        padding: 2vw 2vw;
+    }
     #home>.section_content {
         background-position: top left -10vw;
         background-size: cover;

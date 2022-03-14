@@ -97,6 +97,18 @@ h2 {
     margin-bottom: 1vw;
 }
 
+footer {
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 4vh;
+    font-size: large;
+    color: var(--text);
+}
+
 .band {
     display: flex;
     position: relative;

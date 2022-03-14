@@ -5,13 +5,6 @@
     body {
         /** font-size: 10px; **/
     }
-    footer {
-        display: flex;
-        flex-direction: row;
-        align-content: center;
-        align-items: center;
-        justify-content: space-evenly;
-    }
     .section_header {
         flex-direction: column-reverse;
     }
@@ -317,6 +310,9 @@
         background-color: var(--text);
         height: 100%;
     }
+    .video {
+        max-width: 100%;
+    }
     .video,
     .video iframe {
         position: relative;
@@ -327,6 +323,10 @@
         left: -10%;
         right: unset;
         bottom: unset;
+    }
+    footer {
+        text-align: center;
+        font-size: var(--font-size);
     }
     .band .logo {
         margin: 6vw 0 4vw 0;
